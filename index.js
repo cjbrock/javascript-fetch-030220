@@ -1,9 +1,29 @@
 document.addEventListener("DOMContentLoaded", function(){
+  loadPosts()
   loadFormListener()
   clickEvent()
   mouseOverEvent()
   buttonEvent()
 })
+
+// append the posts to the page
+function addPostsToPage(posts){
+  posts.forEach(function(post){
+    // need to create a post card for each object in here
+    attachPost(postHTML(post))
+  })
+}
+
+
+// fetch the posts from Rails API
+function loadPosts(){
+  fetch("http://localhost:3000/blog_posts")
+  .then(resp => resp.json())
+  .then(data => {
+    addPostsToPage(data)
+  })
+}
+
 
 // grab text from each field
 function getInfo(event){

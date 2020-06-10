@@ -1,13 +1,21 @@
-# DOM Events
-
 ## Agenda
 
-- What is a javascript event?
-  - actions that are triggered by a user action
-- dom content loaded event
-- the submit event
-- the click event
-- the mouseover event
+- Promises
+- Asychronous JS
+- Using Fetch
+
+## Questions to be answered
+
+1. What is a promise?
+  a guarantee to do something
+  a pending state of completion
+  a failure state 
+
+2. What the heck is asychronous JavaScript?
+  JS is single threaded
+  Render blocking 
+  
+
 
 ## 3 Question Rule for every event
 
